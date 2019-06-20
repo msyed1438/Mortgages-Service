@@ -18,6 +18,7 @@
     "startDev": "nodemon server/indexWithMongo.js",
     "seed": "node model/CSVseeder.js",
     "loadSeedPostgres": "node model/loadPostgres.js",
+    "loadMongoDb": "model/loadMongoDb.sh",
     "build": "webpack -d --watch",
     "sqlShell": "sqlite3 fakePrices.sql",
     "queryPricesDB": "node db/pricesDB.js"

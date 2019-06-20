@@ -1,5 +1,10 @@
 var mongoose = require('mongoose');
-var url = 'mongodb://localhost:27017/mortgages';
+var origin = '52.23.251.45'; 
+var url = `mongodb://${origin}:27017/mortgages`; // 
+//var url = 'mongodb://localhost:27017/mortgages'; 
+
+//Comment out line 3 and uncomment line 4 for local access
+
 
 var mortgagesSchema = new mongoose.Schema({
     id: {type: Number, index: true},
