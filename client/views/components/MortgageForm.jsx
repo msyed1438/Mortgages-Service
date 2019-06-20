@@ -45,10 +45,11 @@ export default class MortgageForm extends React.Component {
         // }
         // for deployment
         if ( endpoint === 1 ) {
-            url = 'http://52.23.251.45:3008/api/price'
+            url = 'http://54.162.252.75:3008/api/price'
         } else {
-            url = `http://52.23.251.45:3008/api/price${this.state.path}`;
+            url = `http://54.162.252.75:3008/api/price${this.state.path}`;
         }
+
 
         axios.get(url).then(function(response) {
 
