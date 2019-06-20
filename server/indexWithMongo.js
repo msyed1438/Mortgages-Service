@@ -29,7 +29,6 @@ app.get('/api/price/:priceId', function(req, res) {
     let queryId = req.params.priceId;
     Mortgages.findOne({'id': queryId})
     .then((data) => {
-        console.log('Here we gooooo');
         console.log(data);
         res.status(201);
         res.send(data);
