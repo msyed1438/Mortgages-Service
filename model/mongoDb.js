@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var origin = '52.23.251.45'; 
+var origin = 'ec2-52-23-251-45.compute-1.amazonaws.com'; 
 var url = `mongodb://${origin}:27017/mortgages`; // 
 //var url = 'mongodb://localhost:27017/mortgages'; 
 
@@ -11,7 +11,8 @@ var mortgagesSchema = new mongoose.Schema({
     price: {type: Number}
 });
 
-mongoose.connect(url, {useNewUrlParser: false});
+mongoose.connect(url, {useNewUrlParser: false})
+.catch(err => console.log(`There was an err: ${err}`))
 
 module.exports.Mortgages = mongoose.model('Mortgage', mortgagesSchema);
 
