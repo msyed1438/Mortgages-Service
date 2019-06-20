@@ -12,6 +12,7 @@ var mortgagesSchema = new mongoose.Schema({
 });
 
 mongoose.connect(url, {useNewUrlParser: false})
+.then(() => console.log(`The connection was successful to ${origin}`))
 .catch(err => console.log(`There was an err: ${err}`))
 
 module.exports.Mortgages = mongoose.model('Mortgage', mortgagesSchema);
