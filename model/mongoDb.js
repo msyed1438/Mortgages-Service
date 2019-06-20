@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var origin = 'ec2-52-23-251-45.compute-1.amazonaws.com'; 
+var origin = '52.23.251.45'; 
 var url = `mongodb://${origin}:27017/mortgages`; // 
 //var url = 'mongodb://localhost:27017/mortgages'; 
 
