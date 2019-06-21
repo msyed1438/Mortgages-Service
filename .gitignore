@@ -8,7 +8,7 @@ node_modules/
 
 ## Webpack stuff
 config.js
-public/bundle.js
+client/public/bundle.js
 
 ##CSV data
 model/mortgageData.csv
